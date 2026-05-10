@@ -459,172 +459,136 @@ ul { list-style: none; }
 /* ========================
    PROJECT
    ======================== */
-/* ========================
-   PROJECTS
-   ======================== */
 #project {
   padding: 120px 0;
   background: var(--bg);
 }
 
-.projects-list {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-}
-
-/* Project Card */
-.pcard {
-  background: var(--bg2);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  overflow: hidden;
-  transition: border-color 0.3s;
-}
-.pcard:hover { border-color: var(--border-hover); }
-
-.pcard-top {
+.project-header {
   display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 0;
+  grid-template-columns: 280px 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 80px;
 }
 
-.pcard-logo-wrap {
+.project-logo-wrap {
   background: var(--bg3);
-  border-right: 1px solid var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 32px;
-  min-height: 320px;
-}
-.pcard-logo-wrap img { width: 100%; max-width: 160px; }
-
-.pcard-info {
-  padding: 40px 44px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  aspect-ratio: 1;
 }
 
-.pcard-badge {
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  border: 1px solid;
-  padding: 5px 12px;
-  border-radius: 100px;
-  width: fit-content;
-}
+.project-logo { width: 100%; }
 
-.pcard-title {
+.project-intro h2 {
   font-family: var(--font-display);
-  font-size: clamp(32px, 4vw, 52px);
+  font-size: clamp(36px, 5vw, 60px);
   font-weight: 800;
   line-height: 1;
-  margin: 0;
+  margin-bottom: 8px;
 }
 
-.pcard-tagline {
-  font-size: 15px;
+.project-tagline {
+  font-size: 16px;
   color: var(--accent);
   font-weight: 500;
+  margin-bottom: 20px;
 }
 
-.pcard-desc {
+.project-desc {
   font-size: 15px;
   color: var(--white-70);
   line-height: 1.7;
-  max-width: 620px;
+  margin-bottom: 12px;
 }
 
-.pcard-meta {
+.project-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 4px 0;
+  gap: 16px;
+  margin: 24px 0 28px;
 }
-.pcard-meta-item {
+.meta-item {
   display: flex;
   align-items: center;
   gap: 6px;
   font-size: 13px;
   color: var(--white-40);
 }
-.pcard-meta-item svg { flex-shrink: 0; }
 
-.pcard-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 4px; }
+.project-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 
-/* Problem/feature sub-section inside card */
-.pcard-sub {
-  border-top: 1px solid var(--border);
-  padding: 28px 44px;
-  background: rgba(255,255,255,0.015);
-}
-
-.pcard-sub-label {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--white-40);
-  margin-bottom: 20px;
-}
-
-.pcard-problems {
+.problem-section { margin-top: 0; }
+.problem-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 16px;
 }
 
-.pcard-problem {
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
+.problem-card {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  transition: border-color 0.2s, transform 0.2s;
 }
+.problem-card:hover { border-color: var(--border-hover); transform: translateY(-4px); }
 
-.pp-icon {
-  font-size: 22px;
-  flex-shrink: 0;
-  margin-top: 2px;
+.problem-icon {
+  font-size: 28px;
+  margin-bottom: 14px;
 }
-
-.pcard-problem strong {
-  display: block;
-  font-size: 13px;
+.problem-card h4 {
+  font-size: 15px;
   font-weight: 600;
-  margin-bottom: 4px;
-  color: var(--white);
+  margin-bottom: 10px;
 }
-.pcard-problem p {
-  font-size: 12px;
+.problem-card p {
+  font-size: 13px;
   color: var(--white-40);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-/* Shokran specifics */
-.accent-teal { color: #3dbfbf; }
-.shokran-tagline { color: #3dbfbf !important; }
+/* Project divider */
+.project-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border), transparent);
+  margin: 80px 0;
+}
 
+/* Shokran accent */
+.accent-teal { color: #3dbfbf; }
+
+/* Shokran logo */
 .shokran-logo-bg {
   background: #3dbfbf !important;
-  border-color: rgba(61,191,191,0.25) !important;
+  border-color: rgba(61,191,191,0.3) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .shokran-logo-icon {
-  font-size: 56px;
+  font-size: 52px;
   font-weight: 900;
   color: #fff;
-  font-family: 'Arial', serif;
+  font-family: 'Amiri', 'Scheherazade New', 'Arial', serif;
   text-align: center;
   direction: rtl;
   line-height: 1.2;
-  text-shadow: 0 2px 16px rgba(0,0,0,0.2);
+  text-shadow: 0 2px 12px rgba(0,0,0,0.18);
   user-select: none;
 }
 
+/* Shokran tagline */
+.shokran-tagline { color: #3dbfbf !important; }
+
+/* Shokran CTA button */
 .btn-shokran {
   display: inline-flex;
   align-items: center;
@@ -641,10 +605,12 @@ ul { list-style: none; }
 }
 .btn-shokran:hover { background: #2da8a8; transform: translateY(-1px); }
 
+/* Shokran feature pills */
 .shokran-features {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: 20px;
 }
 .shkfeat {
   display: inline-flex;
@@ -654,10 +620,10 @@ ul { list-style: none; }
   border: 1px solid rgba(61,191,191,0.2);
   color: rgba(255,255,255,0.75);
   font-size: 13px;
-  padding: 8px 16px;
+  padding: 8px 14px;
   border-radius: 100px;
 }
-.shkfeat-icon { font-size: 15px; }
+.shkfeat-icon { font-size: 16px; }
 
 /* ========================
    FEATURES
@@ -1103,11 +1069,8 @@ footer {
   .hamburger { display: flex; }
 
   .about-grid { grid-template-columns: 1fr; }
-  .pcard-top { grid-template-columns: 1fr; }
-  .pcard-logo-wrap { border-right: none; border-bottom: 1px solid var(--border); min-height: 200px; }
-  .pcard-info { padding: 28px 24px; }
-  .pcard-sub { padding: 24px; }
-  .pcard-problems { grid-template-columns: repeat(2, 1fr); }
+  .project-header { grid-template-columns: 1fr; }
+  .project-logo-wrap { max-width: 200px; aspect-ratio: 1; }
 
   .problem-grid { grid-template-columns: repeat(2, 1fr); }
   .biz-stats { grid-template-columns: repeat(2, 1fr); }
@@ -1125,7 +1088,7 @@ footer {
 
 @media (max-width: 600px) {
   .team-grid { grid-template-columns: repeat(2, 1fr); }
-  .pcard-problems { grid-template-columns: 1fr; }
+  .problem-grid { grid-template-columns: 1fr; }
   .biz-stats { grid-template-columns: 1fr 1fr; }
   .value-grid { grid-template-columns: 1fr 1fr; }
   .revenue-grid { grid-template-columns: 1fr; }

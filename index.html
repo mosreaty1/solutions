@@ -133,128 +133,126 @@
   <section id="project">
     <div class="container">
       <div class="section-label">Our Projects</div>
-      <h2 class="section-title">What We've <span class="accent">Built</span></h2>
-
-      <div class="projects-list">
-
-        <!-- ──────────── POINTBUS ──────────── -->
-        <div class="pcard">
-          <div class="pcard-top">
-            <div class="pcard-logo-wrap">
-              <img src="assets/images/pointbus-logo.png" alt="PointBus" />
+      <div class="project-header">
+        <div class="project-logo-wrap">
+          <img src="assets/images/pointbus-logo.png" alt="PointBus" class="project-logo" />
+        </div>
+        <div class="project-intro">
+          <h2>Point<span class="accent">Bus</span></h2>
+          <p class="project-tagline">A Mobile Transit Platform for New Alamein City</p>
+          <p class="project-desc">
+            New Alamein City suffers from severe internal bus traffic chaos — overcrowded vehicles,
+            zero digital tracking, no advance booking, and passengers with no idea when the next
+            bus arrives.
+          </p>
+          <p class="project-desc">
+            PointBus solves Alamein's bus traffic chaos — letting residents search, book, and track
+            bus journeys in real time, ending overcrowding and long waits.
+          </p>
+          <div class="project-meta">
+            <div class="meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Presented: May 2026
             </div>
-            <div class="pcard-info">
-              <div class="pcard-badge" style="background:rgba(200,241,53,0.08);border-color:rgba(200,241,53,0.2);color:var(--accent)">Transit · Hackathon</div>
-              <h2 class="pcard-title">Point<span class="accent">Bus</span></h2>
-              <p class="pcard-tagline">A Mobile Transit Platform for New Alamein City</p>
-              <p class="pcard-desc">
-                New Alamein City suffers from severe internal bus traffic chaos — overcrowded vehicles,
-                zero digital tracking, no advance booking, and passengers with no idea when the next bus arrives.
-                PointBus solves this by letting residents search, book, and track bus journeys in real time.
-              </p>
-              <div class="pcard-meta">
-                <span class="pcard-meta-item">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                  May 2026
-                </span>
-                <span class="pcard-meta-item">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                  Next City Hackathon
-                </span>
-                <span class="pcard-meta-item">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                  pointbus.site
-                </span>
-              </div>
-              <div class="pcard-actions">
-                <a href="https://pointbus.site" target="_blank" class="btn-primary">Visit Website</a>
-                <a href="#features" class="btn-ghost">Explore Features</a>
-              </div>
+            <div class="meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Next City Hackathon
+            </div>
+            <div class="meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              pointbus.site
             </div>
           </div>
-          <!-- Problem breakdown inside card -->
-          <div class="pcard-sub">
-            <p class="pcard-sub-label">Problems We Solved</p>
-            <div class="pcard-problems">
-              <div class="pcard-problem">
-                <span class="pp-icon">🚌</span>
-                <div>
-                  <strong>Overcrowded Buses</strong>
-                  <p>No system limits or tracks seat availability at peak hours.</p>
-                </div>
-              </div>
-              <div class="pcard-problem">
-                <span class="pp-icon">⏱</span>
-                <div>
-                  <strong>No Real-Time Tracking</strong>
-                  <p>Passengers have no idea when the next bus arrives or its route.</p>
-                </div>
-              </div>
-              <div class="pcard-problem">
-                <span class="pp-icon">🎟</span>
-                <div>
-                  <strong>No Booking System</strong>
-                  <p>First-come first-served chaos — no reservation, no queue, no order.</p>
-                </div>
-              </div>
-              <div class="pcard-problem">
-                <span class="pp-icon">📵</span>
-                <div>
-                  <strong>Zero Digital Tools</strong>
-                  <p>Entirely offline with no data or analytics available.</p>
-                </div>
-              </div>
+          <div class="project-actions">
+            <a href="https://pointbus.site" target="_blank" class="btn-primary">Visit Website</a>
+            <a href="#features" class="btn-ghost">Explore Features</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Problem Cards -->
+      <div class="problem-section">
+        <h3 class="sub-heading">The Problem We Solved</h3>
+        <div class="problem-grid">
+          <div class="problem-card">
+            <div class="problem-icon">🚌</div>
+            <h4>Overcrowded Buses</h4>
+            <p>Buses fill beyond capacity at peak hours — no system limits or tracks seat availability.</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">⏱</div>
+            <h4>No Real-Time Tracking</h4>
+            <p>Passengers wait at stops with no idea when the next bus arrives or which route it serves.</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">🎟</div>
+            <h4>No Booking System</h4>
+            <p>Boarding is chaotic and first-come first-served — no reservation, no queue, no order.</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">📵</div>
+            <h4>Zero Digital Tools</h4>
+            <p>Zero digital tracking or management — entirely offline with no data or analytics available.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT DIVIDER -->
+      <div class="project-divider"></div>
+
+      <!-- SHOKRAN PROJECT -->
+      <div class="project-header" id="shokran">
+        <div class="project-logo-wrap shokran-logo-bg">
+          <div class="shokran-logo-icon">شكرًا</div>
+        </div>
+        <div class="project-intro">
+          <h2>Shokran <span class="accent-teal">شكرًا</span></h2>
+          <p class="project-tagline shokran-tagline">Your All-In-One Smart Shopping App</p>
+          <p class="project-desc">
+            Shop smarter and save time with Shokran, the all-in-one app designed to simplify your everyday
+            shopping. Whether you're restocking the fridge with fresh fruits, picking up household cleaners,
+            or grabbing a last-minute deal, Shokran connects you to a wide variety of local markets instantly.
+          </p>
+          <p class="project-desc">
+            Forget long queues and heavy traffic. Just browse, tap, and track your order in real-time
+            until it arrives at your door.
+          </p>
+          <div class="project-meta">
+            <div class="meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              5.0 Rating · 13 Reviews
+            </div>
+            <div class="meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              500+ Downloads
+            </div>
+            <div class="meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              Google Play
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="https://play.google.com/store/apps/details?id=com.shokran" target="_blank" class="btn-shokran">View on Google Play</a>
+          </div>
+          <div class="shokran-features">
+            <div class="shkfeat">
+              <span class="shkfeat-icon">🛒</span>
+              <span>Browse local markets</span>
+            </div>
+            <div class="shkfeat">
+              <span class="shkfeat-icon">📦</span>
+              <span>Real-time order tracking</span>
+            </div>
+            <div class="shkfeat">
+              <span class="shkfeat-icon">💸</span>
+              <span>Exclusive deals & discounts</span>
+            </div>
+            <div class="shkfeat">
+              <span class="shkfeat-icon">🚀</span>
+              <span>Fast delivery to your door</span>
             </div>
           </div>
         </div>
-
-        <!-- ──────────── SHOKRAN ──────────── -->
-        <div class="pcard" id="shokran">
-          <div class="pcard-top">
-            <div class="pcard-logo-wrap shokran-logo-bg">
-              <div class="shokran-logo-icon">شكرًا</div>
-            </div>
-            <div class="pcard-info">
-              <div class="pcard-badge" style="background:rgba(61,191,191,0.08);border-color:rgba(61,191,191,0.2);color:#3dbfbf">Shopping · Google Play</div>
-              <h2 class="pcard-title">Shokran <span class="accent-teal">شكرًا</span></h2>
-              <p class="pcard-tagline shokran-tagline">Your All-In-One Smart Shopping App</p>
-              <p class="pcard-desc">
-                Shop smarter and save time with Shokran — the all-in-one app connecting you to a wide variety
-                of local markets instantly. Browse, tap, and track your order in real-time until it arrives
-                at your door. No queues, no traffic, no hassle.
-              </p>
-              <div class="pcard-meta">
-                <span class="pcard-meta-item">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  5.0 · 13 Reviews
-                </span>
-                <span class="pcard-meta-item">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                  500+ Downloads
-                </span>
-                <span class="pcard-meta-item">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-                  Android
-                </span>
-              </div>
-              <div class="pcard-actions">
-                <a href="https://play.google.com/store/apps/details?id=com.shokran" target="_blank" class="btn-shokran">View on Google Play</a>
-              </div>
-            </div>
-          </div>
-          <!-- Feature pills inside card -->
-          <div class="pcard-sub">
-            <p class="pcard-sub-label">Key Features</p>
-            <div class="shokran-features">
-              <div class="shkfeat"><span class="shkfeat-icon">🛒</span><span>Browse local markets</span></div>
-              <div class="shkfeat"><span class="shkfeat-icon">📦</span><span>Real-time order tracking</span></div>
-              <div class="shkfeat"><span class="shkfeat-icon">💸</span><span>Exclusive deals & discounts</span></div>
-              <div class="shkfeat"><span class="shkfeat-icon">🚀</span><span>Fast delivery to your door</span></div>
-              <div class="shkfeat"><span class="shkfeat-icon">🏪</span><span>Wide variety of local stores</span></div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
